@@ -2,7 +2,7 @@ package main
 
 import (
 	"unsafe"
-	"panictest"
+	"test"
 )
 
 type MyTemplate struct {
@@ -15,7 +15,7 @@ type MyTemplate struct {
 
 func main() {
 
-	panictest.PanicTest1()
+	test.Demo()
 
 	//fmt.Println("aaaaaaa")
 	//defer func() {
