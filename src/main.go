@@ -2,6 +2,7 @@ package main
 
 import (
 	"unsafe"
+	"fmt"
 	"synctest"
 )
 
@@ -13,9 +14,17 @@ type MyTemplate struct {
 	rightDelim string
 }
 
+
 func main() {
 
-	synctest.Sync1()
+	synctest.Sync4()
+	var str string
+	fmt.Scan(&str)
+	//synctest.Sync4()
+
+	//var a = []interface{}{123,"adsf"}
+	//fmt.Println(a)  //[123 adsf]
+	//fmt.Println(a...)//123 adsf
 
 	//fmt.Println("aaaaaaa")
 	//defer func() {
