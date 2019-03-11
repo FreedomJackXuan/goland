@@ -2,8 +2,7 @@ package main
 
 import (
 	"unsafe"
-	"fmt"
-	"synctest"
+	"pubsub"
 )
 
 type MyTemplate struct {
@@ -17,9 +16,12 @@ type MyTemplate struct {
 
 func main() {
 
-	synctest.Sync4()
-	var str string
-	fmt.Scan(&str)
+	pubsub.Pubsubtest()
+	//goroutinetest.Goroutine3()
+
+	//synctest.Sync4()
+	//var str string
+	//fmt.Scan(&str)
 	//synctest.Sync4()
 
 	//var a = []interface{}{123,"adsf"}
