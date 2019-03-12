@@ -3,6 +3,7 @@ package pubsub
 import (
 	"sync"
 	"time"
+	"fmt"
 )
 
 type (
@@ -38,6 +39,7 @@ func (p *Publisher) SubscribeTopic(topic topicFunc) chan interface{} {
 	p.m.Lock()
 	p.subscribers[ch] = topic
 	p.m.Unlock()
+	fmt.Println(ch)
 	return ch
 }
 

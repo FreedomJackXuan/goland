@@ -1,22 +1,26 @@
 package main
 
-import (
-	"unsafe"
-	"pubsub"
-)
+import "C"
 
-type MyTemplate struct {
-	name       string
-	parseTree  *unsafe.Pointer
-	common     *unsafe.Pointer
-	leftDelim  string
-	rightDelim string
-}
-
+//import (
+//	"unsafe"
+//	//"golang.org/x/tools/godoc/vfs"
+//	//"golang.org/x/tools/godoc/vfs/gatefs"
+//	"cgotest"
+//)
+//
+//type MyTemplate struct {
+//	name       string
+//	parseTree  *unsafe.Pointer
+//	common     *unsafe.Pointer
+//	leftDelim  string
+//	rightDelim string
+//}
 
 func main() {
 
-	pubsub.Pubsubtest()
+
+	//pubsub.Pubsubtest()
 	//goroutinetest.Goroutine3()
 
 	//synctest.Sync4()
